@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="app/assets/css/swiper-bundle.min.css" />
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="app/assets/css/styles.css" />
+    <!--========== FORM PANEL ==========-->
+    <link rel="stylesheet" href="app/assets/css/form-panel.css">
+    <title>My Web CV</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header" id="header">
+      <!-- NAV -->
+      <nav class="nav bd-container">
+        <a href="#" class="nav_logo" menu-name>Smith</a>
+        <!-- Nav Menu -->
+        <div class="nav_menu" id="nav-menu" data-nav-menu>
+          <ul class="nav_list">
+            <li class="nav_item" home><a href="#home" class="nav_link" data-nav-link><i class="nav_icon bx bx-home"></i><space>&nbsp</space>Home</a></li>
+            <li class="nav_item"><a href="#profile" class="nav_link" data-nav-link><i class="nav_icon bx bx-user"></i><space>&nbsp</space>Profile</a></li>
+            <li class="nav_item" education><a href="#education" class="nav_link" data-nav-link><i class="nav_icon bx bx-book"></i><space>&nbsp</space>Education</a></li>
+            <li class="nav_item" skills><a href="#skills" class="nav_link" data-nav-link><i class="nav_icon bx bx-receipt"></i><space>&nbsp</space>Skills</a></li>
+            <li class="nav_item" experience><a href="#experience" class="nav_link" data-nav-link><i class="nav_icon bx bx-briefcase-alt"></i><space>&nbsp</space>Experience</a></li>
+            <li class="nav_item" certificates><a href="#certificates" class="nav_link" data-nav-link><i class="nav_icon bx bx-award"></i><space>&nbsp</space>Certificates</a></li>
+            <li class="nav_item" references><a href="#references" class="nav_link" data-nav-link><i class="nav_icon bx bx-link-external"></i><space>&nbsp</space>References</a></li>
+          </ul>
+        </div>
+        <div class="nav_toggle" id="nav-toggle" data-toggle-btn><i class="bx bx-grid-alt"></i></div>
+      </nav>
+    </header>
+
+    <!-- ============ FORM PANEL ============ -->
+    <div class="background_panel" data-bg-panel>
+      <!-- BACKGROUND BLUR -->
+      <!-- <div class="color_panel"></div>
+      <div class="color_panel"></div>
+      <div class="color_panel"></div> -->
+    </div>
+    <aside class="panel_container" data-form-panel>
+      <div class="panel" data-section-panel>
+        <div class="form_container swiper mySwiper">
+          <div class="wrapper swiper-wrapper">
+            <div class="form swiper-slide">
+              <h2>I'M</h2>
+              <form action="" form-home>
+                <div class="input_box"><input type="text" placeholder="Your name" input-name></div>
+                <div class="input_box"><input type="text" placeholder="Your last name" input-lastname></div>
+                <div class="input_box"><input type="text" placeholder="Your profession" input-profession></div>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>ADDRESS</h2>
+              <form action="">
+                <div class="input_box"><input type="text" placeholder="Your home" input-location></div>
+                <div class="input_box"><input type="text" placeholder="Your email" input-email span="email"></div>
+                <div class="input_box"><div class="input_label">+</div>
+                <input type="text" placeholder="Your phone" input-phone span="phone"></div>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>PORTFOLIO</h2>
+              <form action="" form-portfolio>
+                <div class="input_box">
+                  <div class="input_label">/</div>
+                  <div class="label_disable" disable-linkedin>
+                    <i class='bx bx-undo none'></i>
+                    <i class='bx bx-trash-alt'></i>
+                  </div>
+                  <input class="input_disable" type="text" placeholder="Your linkedin" input-linkedin span="linkedin">
+                </div>
+                <div class="input_box">
+                  <div class="input_label">/</div>
+                  <div class="label_disable" disable-github>
+                    <i class='bx bx-undo none'></i>
+                    <i class='bx bx-trash-alt'></i>
+                  </div>
+                  <input class="input_disable" type="text" placeholder="Your gitHub" input-github span="github">
+                </div>
+                <div class="input_box">
+                  <div class="label_disable" disable-website>
+                    <i class='bx bx-undo none'></i>
+                    <i class='bx bx-trash-alt'></i>
+                  </div>
+                  <input class="input_disable" type="text" placeholder="Your website" input-website span="website">
+                </div>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>PROFILE</h2>
+              <form action="" form-profile>
+                <div class="input_box"><textarea type="text" maxlength="250" placeholder="Add a description of yourself" text-profile></textarea></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>EDUCATION</h2>
+              <form action="" form-education>
+                <div class="input_box"><input type="text" placeholder="Your title" education-title></div>
+                <div class="input_box"><input type="text" placeholder="Institute studies" education-institute></div>
+                <div class="input_box"><input type="text" placeholder="Year of completion" education-year></div>
+                <i class="form_button add-button" add-education>+</i>
+                <i class="form_button undo-button" undo-education>-</i>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>EXPERIENCE</h2>
+              <form action="" form-experience>
+                <div class="input_box"><input type="text" placeholder="Exp. Area" experience-title></div>
+                <div class="input_box"><input type="text" placeholder="Year | Company" experience-institute></div>
+                <div class="input_box"><input type="text" placeholder="Description" experience-description></div>
+                <i class="form_button add-button" add-experience>+</i>
+                <i class="form_button undo-button" undo-experience>-</i>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>CERTIFICATES</h2>
+              <form action="" form-certificates>
+                <div class="input_box"><input type="text" placeholder="Certificate" certificate-title></div>
+                <div class="input_box"><input type="text" placeholder="Description" certificate-description></div>
+                <i class="form_button add-button" add-certificate>+</i>
+                <i class="form_button undo-button" undo-certificate>-</i>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>SKILLS</h2>
+              <form action="" form-skills>
+                <div class="input_box"><input type="text" placeholder="Skill" skill-name></div>
+                <i class="form_button add-button" add-skill>+</i>
+                <i class="form_button undo-button" undo-skill>-</i>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+            <div class="form swiper-slide">
+              <h2>Languages</h2>
+              <form action="" form-certificates>
+                <div class="input_box"><input type="text" placeholder="Language" language-name></div>
+                <i class="form_button add-button" add-language>+</i>
+                <i class="form_button undo-button" undo-language>-</i>
+                <div class="input_box"><input type="submit" value="OK" form-submit></div>
+              </form>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv" data-area-cv>
+        <div class="resume_left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home" data-section-id home>
+            <div class="home_container section bd-grid">
+              <div class="home_data bd-grid">
+                <img src="profile.jpg" alt="profile image" class="home_img" title="Profile Image" user-img/>
+                <h1 class="home_title" user-name><span>Giannis</span><space>&nbsp</space><b>Tsochlas</b></h1>
+                <h3 class="home_profession" user-profession>Computer Science & Engineering Student</h3>
+              </div>
+              <div class="home_contact bd-grid" contact>
+                <span class="home_information"><i class="bx bx-map home_icon"><space>&nbsp</space>ATH - IOA GRE</i></span>
+                <span class="home_information"><i class="bx bx-envelope home_icon"><space>&nbsp</space>giannis.papa.2002.ts@gmail.com</i></span>
+                <span class="home_information"><i class="bx bx-phone home_icon"><space>&nbsp</space>6945081891</i></span>
+              </div>
+            </div>
+
+
+          </section>
+          <!-- Form menu button -->
+          <i class="bx bx-chevron-left form-button" data-form-btn></i>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section" social>
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social_container bd-grid">
+              <a href="https://linkedin.com/" class="social_link" target="_blank"><i class="bx bxl-linkedin-square social_icon"></i><space>&nbsp</space>@giannis.tsochlas</a>
+              <a href="https://github.com/GiannisTsochlas" class="social_link" target="_blank"><i class="bx bxl-github social_icon"></i><space>&nbsp</space>@giannis.tsochlas</a>
+            </div>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education" data-section-id education>
+            <h2 class="section-title">Education</h2>
+            <div class="education_container bd-grid" education-container>
+              <div class="item_content" education-item>
+                <div class="time_line">
+                  <span class="rounder"></span>
+                  <span class="line" line></span>
+                </div>
+                <div class="item_data bd-grid">
+                  <h3 class="item_title" education-title>Department of Computer Science & Engineering</h3>
+                  <span class="item_institute" education-institute>University of Ioannina, Greece</span>
+                  <span class="education_year" education-year>Oct 2020 - Present</span>
+                </div>
+              </div>
+              <div class="item_content" education-item>
+                <div class="time_line">
+                  <span class="rounder"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="item_data bd-grid">
+                  <h3 class="item_title">Advanced studies on Math, Informatics, Greek language/literature, Chemistry</h3>
+                  <span class="item_institute">Odyssey Homer, Athens</span>
+                  <span class="education_year">Oct 2017 - Jun 2020</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills" data-section-id skills>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills_content bd-grid">
+              <ul class="skills_data" skills-container>
+                <li class="skills_name" skill-item><span class="circle"></span><space>&nbsp</space>Organization Skills</li>
+                <li class="skills_name" skill-item><span class="circle"></span><space>&nbsp</space>Attention to Detail</li>
+                <li class="skills_name" skill-item><span class="circle"></span><space>&nbsp</space>Responsibility</li>
+                <li class="skills_name" skill-item><span class="circle"></span><space>&nbsp</space>Communication Skills</li>
+              </ul>
+              <ul class="skills_data">
+                <li class="skills_name"><span class="circle"></span><space>&nbsp</space>Leadership</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="resume_right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience" data-section-id experience>
+            <h2 class="section-title">Experience</h2>
+            <div class="experience_container bd-grid" experience-container>
+              <div class="item_content" experience-item>
+                <div class="time_line">
+                  <span class="rounder"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="item_data bd-grid">
+                  <h3 class="experience_title">Head Bar Staff</h3>
+                  <span class="item_institute">May 2020 - Present | Popeye Rollers Club, Artemida Attica</span>
+                  <p class="experience_description">-make of drinks, coffee -manage the bar's warehouse -suggest new products to the business and contact with the sellers (promoted from waiter)</p>
+                </div>
+              </div>
+              <div class="item_content" experience-item>
+                <div class="time_line">
+                  <span class="rounder"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="item_data bd-grid">
+                  <h3 class="experience_title">Head Waiter</h3>
+                  <span class="item_institute">From May 2020 | Popeye Rollers Club</span>
+                  <p class="experience_description">-Providing menu suggestions, answering questions, and communicating additional information to restaurant customers.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile" data-section-id profile>
+            <h2 class="section-title">About Me</h2>
+            <p class="profile_description" user-profile>
+                Since I can remember, I have always been active. When I say active, I mean that I never settled for less; I participated actively in many activities and kept those that excited me.
+                In school, when my teachers informed my parents that there was room for improvement, I became determined and, in the end, succeeded, graduating high school with honors (18.9).
+                <p>I am heavily influenced professionally by my father, who is a high-voltage electrician. When I was young, I used to say that I wanted to work with robots because they excited me (I am a fan of Transformers). However, I changed my mind when, from a young age, he took me along on some of his jobs, and then I insisted that I wanted to become an electrician.</p>
+                <p>When the time came to fill out the application for university and I saw my options, I weighed them and realized that innovative technology excites me. So, the job of a computer engineering and informatics engineer, managing data, and creating advanced applications was the job for me!</p>
+                <p>A significant impact on my professional personality has been the family business, which is an outdoor skating rink by the sea. I must say that as I grow older, I enjoy taking on more and more responsibilities in the business. I started at a young age as a skating instructor, and now my main duties are finding and evaluating seasonal staff and managing the social media.</p>
+            </p>
+          </section>
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section"id="certificates" data-section-id certificates>
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificate_container bd-grid" certificate-container>
+              <div class="certificate_content" certificate-item>
+                <h3 class="certificate_title">Certificate from University of Michigan and Cambridge</h3>
+                <p class="certificate_description">English B2 (Jan 2018) - score 192/200</p>
+              </div>
+              <div class="certificate_content" certificate-item>
+                <h3 class="certificate_title">Certificate from OSD institute</h3>
+                <p class="certificate_description">German B1 (Nov 2018)</p>
+              </div>
+            </div>
+          </section>
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section" data-section-id languages>
+            <h2 class="section-title">Languages</h2>
+            <div class="languages_container">
+              <ul class="languages_content bd-grid" languages-container>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>Greek</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>English</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>German</li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="languages section" data-section-id languages>
+            <h2 class="section-title">Hobbies</h2>
+            <div class="languages_container">
+              <ul class="languages_content bd-grid" languages-container>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>Sailing</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>RollerBlading</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>Ski</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>Surf</li>
+                <li class="languages_name" language-item><span class="circle"></span><space>&nbsp</space>Tennis</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top" data-scrolltop-btn>
+      <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+    </a>
+    <!--========== HTML2PDF ==========-->
+    <script src="app/assets/js/html2pdf.bundle.min.js"></script>
+    <!--========== SWIPER JS ==========-->
+    <script src="app/assets/js/swiper-bundle.min.js"></script>
+    <!--========== MAIN JS ==========-->
+    <script src="app/index.js" type="module"></script>
+  </body>
+</html>
